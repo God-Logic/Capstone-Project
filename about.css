@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-head {
+  text-align: center;
+  padding: 20px 40px 40px 60px;
+  background-image: url(Images/background-op1.png), url(Images/mixing.png);
+  background-size: cover, cover;
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  position: center, center;
+}
+
+.about-head h3 {
+  color: #ff9838;
+  font-weight: 400;
+}
+
+.about-head h2 {
+  color: #ff5438;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-para {
+  text-align: center;
+  padding: 24px;
+}
+
+.about-contact {
+  text-align: center;
+  padding: 30px;
+  background-image: url(Images/background-op1.png);
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 12px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 999; /* Add z-index to ensure it's rendered on top of other elements */
+}
+
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #515151;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #515151;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span::before {
+  top: -10px;
+}
+
+.hamburger span::after {
+  bottom: -10px;
+}
+
+.hamburger.active span {
+  transform: rotate(45deg);
+}
+
+.hamburger.active span::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger.active span::after {
+  bottom: 0;
+  transform: rotate(90deg);
+}
+
+
+.Logo-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.Logo-sec hr {
+  width: 100%;
+  color: #9a9898;
+}
+
+.Logo-sec img {
+  width: 200px;
+  height: 200px;
+}
+
+.Logo-sec h2 {
+  color: #9a9898;
+}
+
+.about-inviro {
+  text-align: center;
+}
+
+.albums {
+  text-align: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #3b3e45;
+}
+
+.albums h2 {
+  color: whitesmoke;
+}
+
+.albums img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border: #b3b3b3 solid 2px;
+  justify-content: space-evenly;
+}
+
+footer img {
+  width: 100px;
+}
+
+footer h6 {
+  font-size: 16px;
+  width: 50%;
+}
+
+
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  background-color: #f8f8f8;
+  list-style-type: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  padding-top: 200px;
+  background-image: url(Images/background-op1.png);
+  background-size: cover;
+}
+
+.dropdown-menu a {
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ff5438;
+  padding: 10px;
+  border-bottom: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ddd;
+}

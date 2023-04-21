@@ -1,62 +1,91 @@
 const datas = [
   {
-    Image:"", 
+    Image: "../Images/bass-guitarist.jpg",
     name: "Kenya Malaika",
     pronounce: "She",
     description: "bassist ",
     major: "jazz and classical",
-    Experience: "composer,song writer,vocal arranger and music director",
+    experience: "composer,song writer,vocal arranger and music director",
   },
   {
+    Image: "../Images/pianist.jpg",
     name: "Azania Culo",
     pronounce: "He",
-    description: "Keyboard player",
+    description: "Pianist",
     major: "contemporary Jazz",
-    experience: "music diractor, arranger and composer",
+    experience: "music director, arranger and composer",
   },
   {
+    Image: "../Images/guitarist.jpg",
     name: "Themba Africa",
     pronounce: "He",
     description: "Guitarist",
-    Experience: "composer,song writer and vocal coach",
+    major: "contemporary Jazz",
+    experience: "composer,song writer and vocal coach",
   },
   {
-    name: "Lerato zuco",
+    Image: "../Images/drummer.jpg",
+    name: "T-zone zuco",
     pronounce: "He",
     description: "drummer",
-    Experience: "composer,song writer and arraner",
+    major: "jazz and classical",
+    experience: "composer,song writer and arraner",
   },
   {
-    name: "",
-    pronounce: "He",
-    description: "saxophonist",
-    Experience: "composer,song writer and music director",
+    Image: "../Images/Singer.jpg",
+    name: "Koketso Moloko",
+    pronounce: "She",
+    description: "vocalist",
+    major: "jazz and funk",
+    experience: "composer,song writer and music director",
   },
   {
-    name: "Themba Africa",
+    Image: "../Images/percs.jpg",
+    name: "Zakes Percs",
     pronounce: "Percussionist",
     description: "Guitarist",
-    Experience: "composer,song writer and sound engineer",
+    major: "jazz and african jazz",
+    experience: "composer,song writer and sound engineer",
   },
 ];
 
-const postContainer = document.querySelector('.cards')
+const postContainer = document.querySelector('.dynamic')
 
 const postMethods = () =>{
   datas.map((postData)=>{
     const postElement=document.createElement('div');
-    postElement.classList.add('cards');
-    postElement.innerHTML =
-     (datas) =>` 
-    <h2>${postData.name}</h2>
-    <p>Is a professional ${postData.name} who major in ${postData.major} music</p>
-    <h6>${postData.pronounce} has experience also as a${postData.experience}.</h6>
-    `
+    postElement.classList.add('dynamic');
+    postElement.innerHTML = `
+      <div class= 'cards'>
+      <img src="${postData.Image}" alt="musician">
+      
+      <div class = "text">
+        <h2>${postData.name}</h2>
+        <hr>
+        <p>Is a professional ${postData.description} who majors in ${postData.major} music.</p>
+        <h6>${postData.pronounce} has experience also as a ${postData.experience}.</h6>
+      </div>
+    `;
 
-    postContainer.appendChild(postElement)
-
+    postContainer.appendChild(postElement);
   })
 
 }
 postMethods()
+ function toggleMenu() {
+   document.querySelector(".hamburger").classList.toggle("active");
+   document.querySelector(".dropdown-menu").classList.toggle("active");
+ }
+
+ function closeMenu() {
+   document.querySelector(".hamburger").classList.remove("active");
+   document.querySelector(".dropdown-menu").classList.remove("active");
+ }
+ document.querySelectorAll(".dropdown-menu a").forEach(function (link) {
+   link.addEventListener("click", function () {
+     closeMenu();
+   });
+ });
+
+ 
 

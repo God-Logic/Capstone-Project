@@ -5,21 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Capstone</title>
 </head>
 <body>
   <nav class="nav-box">
-    <div class="hamburger">
+    <div class="hamburger" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <div class="dropdown-menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#musicians">Resident-Musicians</a>
+       <a href="about.html">About</a>
+    </div>
     
+      
 
   </nav>
-  <section>
+  <section id="home">
     <div class="whole-body1">
-    
+      <div class="lotainer">
+        <div class="logo">
+          <img src="Images/Logo.png" alt="">
+        </div>
+      </div>
       <div class="div-1">
           <h1>Welcome to Groovy studios.</h1>
       </div>
@@ -31,20 +43,47 @@
       </div>
       <div class="visit-time">
       <h2>
-        Visit us any time: MON-SAT 8h00-18h00.
+        Visit us any time from MON-SAT between 8h00-18h00.
       </h2>
     </div>
     </div>
-      <div class="services">
+      <div class="services" id="services">
         <h2>WE OFFER</h2>
-        <ul>
-          <li><img src="Images/recording.jpg" alt="record">Recording Sessions.</li>
-          <li><img src="Images/mixing-mastering.jpg" alt="mixer">Mixing and Mastering.</li>
-          <li><img src="Images/Rehearsal-space.jpg" alt="rehearsal-space">Rehearsal Space.</li>
-          <li><img src="Images/bass-guitarist.jpg" alt="muscian">Session Musicians.</li>
-          <li><img src="Images/pen-gd80170b89_640.jpg" alt="writer">Song Writers. </li>
-          <li><img src="Images/backing-vocals.jpg" alt="backing-mics">Backing Vocals.</li>
-        </ul>
+        <div class="offers">
+          <div>
+            <img src="Images/recording.jpg" alt="record">
+            <h3>Recording.</h3>
+            <h6>Book a recording session that will return a crisp clean sound, to be mixed in house or for you to take with.</h6>
+          </div>
+          <div>
+            <img src="Images/mixings.png" alt="mixer">
+            <h3>Mixing and Mastering.</h3>
+            <h6>Bring in a project or use inhouse recording so we can help enhance its quality so you get the best sound possible</h6>
+
+          </div>
+          <div>
+            <img src="Images/Rehearsal-space.jpg" alt="rehearsal-space">
+            <h3>Rehearsal Space.</h3>
+            <h6>Bring in your band before recording or before a show for a private rehearsal space with top quality instruments.</h6>
+
+          </div>
+          <div>
+            <img src="Images/musicians.png" alt="muscian">
+            <h3>Session Musicians.</h3>
+            <h6>You can get hold of our professional session musicians incase you need a band for your session</h6>
+
+          </div>
+          <div>
+            <img src="Images/song-writer.png" alt="writer">
+            <h3>Song Writers. </h3>
+            <h6>Your song lacks lyrics worry not we have our own song writers that can help you with lyrics</h6>
+          </div>
+          <div>
+            <img src="Images/vocalist.png" alt="backing-mics">
+            <h3>Backing Vocals</h3>
+            <h6>Looking to harmonize your music with the best vocalis? Worry not, We have vocalist that sing all different ranges</h6>
+          </div>
+        </div>
         <div class="button">
           <button>Book A Session</button>
         </div>
@@ -53,26 +92,20 @@
 
 <!-- about section -->
 
-<section>
+<section id="musicians">
   <div class="cardz-sector">
     <div>
       <h2>Meet Our Resident Musicians.</h2>
     </div>
 
-    <div class="cards">
-      <!-- <img src="Images/bass-guitarist.jpg" alt="musician">
-      <div class="text">
-        <h3>Kenya Malaika</h3>
-        <hr>
-        <p>Is a professional bassist, who majors in jazz and classical music.</p>
-        <h6>She has experience also as a composer,vocal arranger,song writer and music director</h6> -->
-      </div>
-      
-    </div>  
-</section>
+    <div class="card-list">
 
-<section>
-  <div class="About-us"></div>
-</section>  
+       <div class="dynamic">
+   
+        </div>  
+      
+    </div>
+</section>
+<script src="index.js"></script>  
 </body>
 </html>
