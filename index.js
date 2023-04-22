@@ -80,6 +80,9 @@ function closeMenu() {
   document.querySelector('.hamburger').classList.remove('active');
   document.querySelector('.dropdown-menu').classList.remove('active');
 }
+// document.querySelector(".hamburger").addEventListener("click", () => {
+//   toggleMenu();
+// });
 document.querySelectorAll('.dropdown-menu a').forEach((link) => {
   link.addEventListener('click', () => {
     closeMenu();
