@@ -8,15 +8,15 @@
 }
 
 .nav-box {
-  padding: 10px;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background: rgba(72, 72, 72, 0);
+  background: rgb(255, 255, 255);
   z-index: 999;
   display: flex;
 }
+
+
 
 .hamburger {
   display: block;
@@ -129,12 +129,12 @@
 }
 
 .whole-body1 {
-  height: 100%;
   padding: 0% 5% 15% 5%;
-  background-image: url(Images/background-op1.png);
+  background-image: url(Images/mabackgrounder.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 40px 0;
+  
 }
 
 .header h2 {
@@ -306,17 +306,146 @@
 }
 /* desktop media query */
 @media (min-width: 769px) {
-  }
+
   .hamburger {
   display: none;
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-  width: 12px;
-  height: 20px;
+  }
+
+
+  .nav-box{
+  padding:0 8%;
   display: flex;
   align-items: center;
+  gap: 30%;
+  width: 100%;
+  
+  
+
+  }
+
+  .dropdown-desktp{
+    display: flex;
+    gap: 80px;
+  }
+
+  .dropdown-desktp a{
+  text-decoration: none;
+  color: black;
+  }
+
+  .logo img {
+  margin-bottom: 0;
 }
+
+.whole-body1 {
+  height: 887px;
+  padding:0 8% -20% 8%;
+
+}
+
+
+.div-1 {
+  font-size: 50px;
+  width: 50%;
+
+}
+
+.div-2 {
+  font-size: 30px;
+  width: 60%;
+}
+
+.div-3 {
+  font-size: 25px;
+  width: 65%;
+  margin-top: 20px;
+}
+
+.visit-time {
+font-size:30px;
+width: 100%;
+}
+
+.services{
+  padding: 75px 0;
+}
+
+.offers{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+}
+.offers div{
+  flex-direction: column;
+  width: 13%;
+  gap:20px;
+  text-align: center;
+}
+
+.button button{
+  background-color: transparent;
+  font-size: 20px;
+  border-bottom: solid white 2px ;
+}
+
+.button button:hover{
+  background-color: transparent;
+  border-bottom: solid #ff5438 2px;
+
+}
+
+.cardz-sector{
+  padding-top:0;
+  padding-bottom: 1px;
+}
+
+.cards img{
+  width: 250px;
+  height: 130px;
+}
+.card-list{
+  display: flex;
+
+
+}
+.dynamic{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.partners{
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+footer{
+  display: flex;
+  padding:0 6%;
+  justify-content: flex-start;
+  gap: 20%;
+  align-items: center;
+  background-color: #ddd;
+
+  
+}
+footer{
+  font-size: 20px;
+}
+
+}
+@media (max-width: 769px){
+  .logo img,
+  .dropdown-desktp,
+  .partners,
+  footer{
+    display: none;
+  }
+}
+
 
   
   

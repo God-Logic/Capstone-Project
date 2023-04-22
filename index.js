@@ -8,7 +8,7 @@ const datas = [
     experience: "composer,song writer,vocal arranger and music director",
   },
   {
-    Image: "../Images/pianist.jpg",
+    Image: "../Images/percussion.jpg",
     name: "Azania Culo",
     pronounce: "He",
     description: "Pianist",
