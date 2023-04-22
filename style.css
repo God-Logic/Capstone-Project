@@ -228,12 +228,12 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.button {
+.submit-b {
   display: flex;
   justify-content: center;
 }
 
-.button button {
+.submit-b button {
   border-style: none;
   background-color: #ff5438;
   color: #fff;
@@ -365,13 +365,13 @@
     text-align: center;
   }
 
-  .button button {
+  .submit-b button {
     background-color: transparent;
     font-size: 20px;
     border-bottom: solid white 2px;
   }
 
-  .button button:hover {
+  .submit-b button:hover {
     background-color: transparent;
     border-bottom: solid #ff5438 2px;
   }
