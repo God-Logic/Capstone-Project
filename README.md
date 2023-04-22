@@ -126,6 +126,10 @@ Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters
 You can deploy this project using:https://god-logic.github.io/My-Portfolio-Website/
 
 
+### Video link to the loom.
+
+follow this link to see the presentation:https://www.loom.com/share/735e1c142f0f4962a634b0e3a2c62ad1
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
