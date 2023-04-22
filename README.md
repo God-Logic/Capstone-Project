@@ -123,7 +123,7 @@ Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters
 
 ### Deployment
 
-You can deploy this project using:https://god-logic.github.io/My-Portfolio-Website/
+You can deploy this project using:https://god-logic.github.io/Capstone-Project/
 
 
 ### Video link to the loom.
