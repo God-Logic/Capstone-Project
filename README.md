@@ -26,7 +26,7 @@
 
 # 📖 Hello Microverse <a name="Capstone project."></a>
 
-> This project is a Website that Introduces a company called Groove Studions, the company is a music recording studio.
+> This project is a Website that Introduces a company called Groove Studios, the company is a music recording studio.
 
 **Mobile project setup** is a project 
 
@@ -171,7 +171,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse as well as Emmanuel Tofa
+I would like to thank Microverse.
+
+Also give credit to the designer Ciny shin and you can follow this link to get in touch with her.   https://www.behance.net/adagio07
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

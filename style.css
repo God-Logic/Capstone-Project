@@ -23,6 +23,7 @@
   height: 20px;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 
 .hamburger span {
@@ -78,7 +79,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 998;
   padding-top: 200px;
   background-image: url(Images/background-op1.png);
   background-size: cover;

@@ -52,6 +52,7 @@ const datas = [
 const postContainer = document.querySelector('.dynamic');
 
 const postMethods = () => {
+  // eslint-disable-next-line array-callback-return
   datas.map((postData) => {
     const postElement = document.createElement('div');
     postElement.classList.add('dynamic');
@@ -71,18 +72,19 @@ const postMethods = () => {
   });
 };
 postMethods();
+// eslint-disable-next-line no-unused-vars
 function toggleMenu() {
-  document.querySelector('.hamburger').classList.toggle('active');
-  document.querySelector('.dropdown-menu').classList.toggle('active');
+  const hamburger = document.querySelector('.hamburger');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  hamburger.classList.toggle('active');
+  dropdownMenu.classList.toggle('active');
 }
 
 function closeMenu() {
   document.querySelector('.hamburger').classList.remove('active');
   document.querySelector('.dropdown-menu').classList.remove('active');
 }
-// document.querySelector(".hamburger").addEventListener("click", () => {
-//   toggleMenu();
-// });
 document.querySelectorAll('.dropdown-menu a').forEach((link) => {
   link.addEventListener('click', () => {
     closeMenu();

@@ -55,7 +55,7 @@
   height: 20px;
   display: flex;
   align-items: center;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .hamburger span {
