@@ -1,6 +1,6 @@
 const datas = [
   {
-    Image: '../Images/bass-guitarist.jpg',
+    Image: './Images/bass-guitarist.jpg',
     name: 'Kenya Malaika',
     pronounce: 'She',
     description: 'bassist ',
@@ -8,7 +8,7 @@ const datas = [
     experience: 'composer,song writer,vocal arranger and music director',
   },
   {
-    Image: '../Images/percussion.jpg',
+    Image: './Images/percussion.jpg',
     name: 'Azania Culo',
     pronounce: 'He',
     description: 'Pianist',
@@ -16,7 +16,7 @@ const datas = [
     experience: 'music director, arranger and composer',
   },
   {
-    Image: '../Images/guitarist.jpg',
+    Image: './Images/guitarist.jpg',
     name: 'Themba Africa',
     pronounce: 'He',
     description: 'Guitarist',
@@ -24,7 +24,7 @@ const datas = [
     experience: 'composer,song writer and vocal coach',
   },
   {
-    Image: '../Images/drummer.jpg',
+    Image: './Images/drummer.jpg',
     name: 'T-zone zuco',
     pronounce: 'He',
     description: 'drummer',
@@ -32,7 +32,7 @@ const datas = [
     experience: 'composer,song writer and arraner',
   },
   {
-    Image: '../Images/Singer.jpg',
+    Image: './Images/Singer.jpg',
     name: 'Koketso Moloko',
     pronounce: 'She',
     description: 'vocalist',
@@ -40,7 +40,7 @@ const datas = [
     experience: 'composer,song writer and music director',
   },
   {
-    Image: '../Images/percs.jpg',
+    Image: './Images/percs.jpg',
     name: 'Zakes Percs',
     pronounce: 'Percussionist',
     description: 'Guitarist',
