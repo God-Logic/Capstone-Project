@@ -109,7 +109,7 @@
 .lotainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 30%;
+  margin-bottom: 0;
 }
 
 .logo img {
@@ -119,11 +119,13 @@
 }
 
 .whole-body1 {
-  padding: 0% 5% 15% 5%;
+  padding: 15% 8% 5% 8%;
   background-image: url(Images/mabackgrounder.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 40px 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header h2 {
@@ -147,7 +149,7 @@
   width: 60%;
   border-radius: 0 10px 0;
   padding: 3px;
-  color: orangered;
+  color: rgb(255, 166, 0);
   box-shadow: 2px 2px 2px 0;
   margin-bottom: 5px;
 }
@@ -244,6 +246,16 @@
   margin-top: 30px;
 }
 
+.seemore button {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #000;
+  border: solid 1px #ddd;
+  width: 100%;
+}
+
 .button button:hover {
   color: #ff5438;
   background-color: #3b3e45;
@@ -293,13 +305,36 @@
   width: 30%;
 }
 
+.seemore {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
 /* desktop media query */
 @media (min-width: 769px) {
-  .hamburger {
+  .hamburger,
+  div.rehearsal-space {
     display: none;
   }
 
   .nav-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grey-bar ul {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px 8%;
+    gap: 20px;
+    color: #fff;
+    justify-content: flex-end;
+  }
+
+  .desktop-bar {
     padding: 0 8%;
     display: flex;
     align-items: center;
@@ -322,7 +357,7 @@
   }
 
   .whole-body1 {
-    height: 887px;
+    height: 100%;
     padding: 0 8% -20% 8%;
   }
 
@@ -402,6 +437,17 @@
 
   footer {
     display: flex;
+    flex-direction: column;
+    padding: 0 6%;
+    justify-content: flex-start;
+    gap: 20%;
+    align-items: center;
+    background-color: #ddd;
+    font-size: 20px;
+  }
+
+  .license {
+    display: flex;
     padding: 0 6%;
     justify-content: flex-start;
     gap: 20%;
@@ -415,7 +461,8 @@
   .logo img,
   .dropdown-desktp,
   .partners,
-  footer {
+  footer,
+  .grey-bar {
     display: none;
   }
 }

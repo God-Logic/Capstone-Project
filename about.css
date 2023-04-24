@@ -17,7 +17,7 @@
 
 .about-head {
   text-align: center;
-  padding: 20px 40px 40px 60px;
+  padding: 80px 40px 40px 60px;
   background-image: url(Images/mabackgrounder.jpg);
   background-size: cover;
   image-rendering: pixelated;
@@ -213,16 +213,28 @@ footer h6 {
 
   .nav-box {
     display: flex;
-    padding: 0 8%;
-    align-items: center;
-    gap: 30%;
-    width: 100%;
-    position: fixed;
-    background-color: white;
+    flex-direction: column;
   }
 
-  .nav-box img {
-    width: 80px;
+  .grey-bar ul {
+    background-color: #343434;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 8%;
+    list-style: none;
+    gap: 20px;
+    color: #fff;
+  }
+
+  .the-bar {
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+  }
+
+  .the-bar img {
+    width: 100px;
   }
 
   .dropdown-desktp {
@@ -315,7 +327,8 @@ footer h6 {
   .partners,
   .about-paDsk,
   .Logo-sec p,
-  .albums h4 {
+  .albums h4,
+  .grey-bar {
     display: none;
   }
 }
