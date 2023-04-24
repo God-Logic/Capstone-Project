@@ -441,25 +441,21 @@
     gap: 40px;
   }
 
-  .partners h3{
+  .partners h3 {
     font-size: 40px;
     color: #989898;
-    
-    
   }
 
-  .parthead{
+  .parthead {
     display: flex;
     justify-content: center;
   }
 
-  .sponsors ul{
+  .sponsors ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-
   }
 
   footer {
