@@ -120,10 +120,15 @@ Example command:
 Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters 
 ```
 
+<!-- LIVE DEMO -->
 
-### Deployment
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You can deploy this project using:https://god-logic.github.io/Capstone-Project/
+> Add a link to your deployed project.
+
+- [Live Demo Link]((https://god-logic.github.io/Capstone-Project/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Video link to the loom.
