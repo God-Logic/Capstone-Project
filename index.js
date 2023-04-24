@@ -40,7 +40,7 @@ const datas = [
     experience: 'composer,song writer and music director',
   },
   {
-    Image: './Images/percs.jpg',
+    Image: './Images/Percs.jpg',
     name: 'Zakes Percs',
     pronounce: 'Percussionist',
     description: 'Guitarist',
