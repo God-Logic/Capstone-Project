@@ -314,7 +314,8 @@
 /* desktop media query */
 @media (min-width: 769px) {
   .hamburger,
-  div.rehearsal-space {
+  div.rehearsal-space,
+  .seemore{
     display: none;
   }
 
