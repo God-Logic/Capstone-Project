@@ -126,7 +126,7 @@ Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]((https://god-logic.github.io/Capstone-Project/)
+- [Live Demo Link](https://god-logic.github.io/Capstone-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
