@@ -124,7 +124,6 @@ Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://god-logic.github.io/Capstone-Project/)
 
