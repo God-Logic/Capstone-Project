@@ -133,7 +133,7 @@ Run "npx stylelint "**/*.{css,scss}" --fix " to fix linters
 
 ### Video link to the loom.
 
-follow this link to see the presentation:https://www.loom.com/share/735e1c142f0f4962a634b0e3a2c62ad1
+follow this link to see the presentation:https://www.loom.com/share/99e7cea0aae84ee3b4e55204a88ccc03
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
