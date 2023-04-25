@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  z-index: 999;
+  display: flex;
+}
+
+.about-head {
+  text-align: center;
+  padding: 80px 40px 40px 60px;
+  background-image: url(Images/mabackgrounder.jpg);
+  background-size: cover;
+  image-rendering: pixelated;
+}
+
+.about-head h3 {
+  color: #ff9838;
+  font-weight: 400;
+}
+
+.about-head h2 {
+  color: #ff5438;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.about-para {
+  text-align: center;
+  padding: 24px;
+}
+
+.about-contact {
+  text-align: center;
+  padding: 30px;
+  background-image: url(Images/background-op1.png);
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 12px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #515151;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #515151;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span::before {
+  top: -10px;
+}
+
+.hamburger span::after {
+  bottom: -10px;
+}
+
+.hamburger.active span {
+  transform: rotate(45deg);
+}
+
+.hamburger.active span::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger.active span::after {
+  bottom: 0;
+  transform: rotate(90deg);
+}
+
+.Logo-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.Logo-sec hr {
+  width: 100%;
+  color: #9a9898;
+}
+
+footer img {
+  width: 100px;
+}
+
+.Logo-sec img {
+  width: 200px;
+  height: 200px;
+}
+
+.Logo-sec h2 {
+  color: #9a9898;
+}
+
+.about-inviro {
+  text-align: center;
+}
+
+.albums {
+  text-align: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.albums h2 {
+  color: rgb(28, 28, 28);
+}
+
+.albums img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.white-foot {
+  display: flex;
+  align-items: center;
+  border: #b3b3b3 solid 2px;
+  justify-content: space-evenly;
+}
+
+.grey-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+  align-items: center;
+  background-color: #343434;
+  color: #f8f8f8;
+}
+
+.grey-foot ul {
+  list-style: none;
+}
+
+.top3 {
+  display: flex;
+}
+
+footer h6 {
+  font-size: 16px;
+  width: 50%;
+}
+
+.white-foot h6 {
+  font-size: 10px;
+}
+
+.bottom2 {
+  display: flex;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  background-color: #f8f8f8;
+  list-style-type: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  padding-top: 200px;
+  background-image: url(Images/background-op1.png);
+  background-size: cover;
+}
+
+.dropdown-menu a {
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ff5438;
+  padding: 10px;
+  border-bottom: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ddd;
+}
+
+@media (min-width: 769px) {
+  .hamburger,
+  .about-para,
+  .grey-foot {
+    display: none;
+  }
+
+  .nav-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grey-bar ul {
+    background-color: #343434;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 8%;
+    list-style: none;
+    gap: 20px;
+    color: #fff;
+  }
+
+  .the-bar {
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+  }
+
+  .the-bar img {
+    width: 100px;
+  }
+
+  .dropdown-desktp {
+    display: flex;
+    gap: 80px;
+  }
+
+  .dropdown-desktp a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .about-head {
+    height: 723px;
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-head h3 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #ff5438;
+  }
+
+  .about-head h2 {
+    font-size: 60px;
+  }
+
+  .about-paDsk {
+    width: 793px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .Logo-sec h2 {
+    font-size: 30px;
+    color: black;
+  }
+
+  .Logo-sec p {
+    width: 50%;
+    color: #9a9898;
+  }
+
+  .Logo-sec img {
+    border: solid 2px #9a9898;
+    width: 400px;
+  }
+
+  .albums {
+    background-color: transparent;
+  }
+
+  .albums h2 {
+    font-size: 30px;
+    color: black;
+  }
+
+  .albums h4 {
+    color: #b3b3b3;
+  }
+
+  .album-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .album-images img {
+    width: 40%;
+  }
+
+  .white-foot {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    padding: 10px 0;
+  }
+
+  .white-foot h6 {
+    font-size: 20px;
+  }
+
+  .white-foot img {
+    width: 150px;
+  }
+
+  footer {
+    font-size: 14px;
+    color: #fff;
+    background-color: #343434;
+  }
+}
+
+@media (max-width: 769px) {
+  .logo img,
+  .dropdown-desktp,
+  .partners,
+  .about-paDsk,
+  .Logo-sec p,
+  .albums h4,
+  .grey-bar {
+    display: none;
+  }
+}
