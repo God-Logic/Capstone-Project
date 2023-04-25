@@ -161,6 +161,7 @@
   color: rgb(74, 74, 74);
   color: #515151;
   box-shadow: 2px 2px 2px 0;
+  font-size: 14px;
 }
 
 .visit-time {
@@ -311,11 +312,49 @@
   padding: 0 20px;
 }
 
+.license {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 0 40px;
+}
+
+.license h2 {
+  font-size: 13px;
+  color: #515151;
+}
+
+.license img {
+  width: 100px;
+}
+
+.partners {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.top3 {
+  padding-bottom: 15px;
+}
+
+.partners ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
 /* desktop media query */
 @media (min-width: 769px) {
   .hamburger,
   div.rehearsal-space,
-  .seemore {
+  .seemore,
+  .spons {
     display: none;
   }
 
@@ -373,9 +412,9 @@
   }
 
   .div-3 {
-    font-size: 25px;
     width: 65%;
     margin-top: 20px;
+    font-size: 20px;
   }
 
   .visit-time {
@@ -424,6 +463,7 @@
 
   .card-list {
     display: flex;
+    padding: 80px 0;
   }
 
   .dynamic {
@@ -472,10 +512,17 @@
   .license {
     display: flex;
     padding: 0 6%;
-    justify-content: flex-start;
-    gap: 20%;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #ddd;
+    font-size: 20px;
+  }
+
+  .license img {
+    width: 200px;
+  }
+
+  .license h2 {
     font-size: 20px;
   }
 }
@@ -483,8 +530,7 @@
 @media (max-width: 769px) {
   .logo img,
   .dropdown-desktp,
-  .partners,
-  footer,
+  .sponsors,
   .grey-bar {
     display: none;
   }
